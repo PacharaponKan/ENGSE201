@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <!-- Viewport Meta Tag ตามที่กำหนดในเอกสาร -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGSE611 Responsive Design</title>
+</head>
+<body>
+
+  <!-- ส่วนหัวเว็บไซต์ -->
+  <header>
+    <h1>Mobile-First Approach</h1>
+    <p>เริ่มออกแบบจากมือถือ แล้วค่อยขยายสู่จอใหญ่</p>
+    <!-- เมนูนำทาง -->
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#">เกี่ยวกับ</a>
+      <a href="#">บทเรียน</a>
+      <a href="#">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <!-- ครอบด้วย Container เพื่อใช้งานร่วมกับ max-width และ CSS Variables -->
+  <div class="container">
+
+    <!-- เนื้อหาหลัก (ทำงานร่วมกับ Grid คอลัมน์บนแท็บเล็ตและเดสก์ท็อป) -->
+    <main>
+      <div class="card">
+        <h3>แนวคิด Mobile-First</h3>
+        <p>
+          เริ่มออกแบบและเขียนโค้ดสำหรับหน้าจอมือถือก่อน จากนั้นจึงเพิ่มเงื่อนไขสำหรับหน้าจอที่ใหญ่ขึ้น
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>ข้อดี</h3>
+        <ul>
+          <li>เว็บไซต์โหลดเร็ว</li>
+          <li>เหมาะกับผู้ใช้มือถือ</li>
+          <li>โค้ดเป็นระเบียบ</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>การใช้งานจริง</h3>
+        <p>
+          ใช้ร่วมกับ Responsive Design และเป็นมาตรฐานของการพัฒนาเว็บยุคปัจจุบัน
+        </p>
+      </div>
+
+      <!-- การ์ดทดสอบ Flexible / Responsive Images (Lazy Loading) -->
+      <div class="card">
+        <h3>Responsive Images</h3>
+        <p>ตัวอย่างรูปภาพที่ปรับขนาดตามหน้าจอโดยอัตโนมัติ ไม่ล้นจอ และไม่เสียสัดส่วน</p>
+        <img src="photo.jpg" loading="lazy" alt="ตัวอย่างรูปภาพ">
+      </div>
+
+      <!-- การ์ดตัวอย่าง Modern CSS Features -->
+      <div class="card">
+        <h1>Modern CSS Features</h1>
+        <p>
+          ตัวอย่างนี้แสดงการใช้ CSS Variables และฟังก์ชัน clamp() เพื่อทํา Responsive Design โดยไม่ต้องเขียน Media Query จํานวนมาก
+        </p>
+        <p>
+          เมื่อขยายหรือย่อหน้าจอ จะเห็นว่าระยะขอบและขนาดตัวอักษร ปรับเปลี่ยนอย่างอัตโนมัติและลื่นไหล
+        </p>
+      </div>
+    </main>
+
+    <!-- ส่วนทดสอบ Flexbox Responsive -->
+    <div class="card">
+      <h1>Flexbox กับ Responsive</h1>
+      <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+      </div>
+    </div>
+
+    <!-- ส่วนทดสอบ Grid Responsive -->
+    <div class="card">
+      <h1>Grid Responsive</h1>
+      <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ส่วนท้าย -->
+  <footer>
+    รายวิชา ENGSE611 การพัฒนาเว็บด้วยเทคโนโลยีสมัยใหม่
+  </footer>
+
+</body>
+</html>

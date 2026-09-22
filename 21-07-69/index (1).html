@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เว็บแนะนำตัวเอง</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ──────────────────────────────────────────── Header ──────────────────────────────────────────── -->
+    <header id="main-header">
+      <h1>พชรพล กันทาลักษณ์</h1>
+    </header>
+
+    <!-- ──────────────────────────────────────────── Nav ──────────────────────────────────────────── -->
+    <nav>
+      <a href="#about">แนะนำตัว</a>
+      <a href="#hobby">สิ่งที่ชอบ</a>
+      <a href="#contact">ข้อมูลเพิ่มเติม</a>
+    </nav>
+
+    <!-- ──────────────────────────────────────────── Main ──────────────────────────────────────────── -->
+    <main>
+      <section id="about">
+        <h2>แนะนำตัว</h2>
+      <!-- ─── Image ───────────────────────────────────── -->
+        <img
+          src="https://cdn.discordapp.com/attachments/1511364522986962957/1526586514572709888/A6A7FB69-EE45-42B7-B08C-F16FC51BCE39.png?ex=6a5838bb&is=6a56e73b&hm=dac68c1672d5099ab0dd7226f75e1bdf8f1184efe13930eb6002be57f3480433&"
+          alt="รูปโปรไฟล์"
+          width="250"
+          height="250"
+        />
+
+        <p>เว็ปไซต์แนะนำตัวเอง</p>
+      </section>
+
+      <section id="hobby">
+        <h2>สิ่งที่ชอบ</h2>
+
+        <p class="highlight">ผมชอบเรื่องคอมพิวเตอร์ นิยาย และการเขียนโปรแกรม</p>
+
+        <ul>
+          <li>เล่นเกม</li>
+          <li>อ่านหนังสือ</li>
+          <li>เรียนเขียนโปรแกรม</li>
+        </ul>
+      </section>
+
+      <!-- ─── Table ───────────────────────────────────── -->
+      <section>
+        <h2>ข้อมูลเพิ่มเติม</h2>
+        <table border="1">
+          <tr>
+            <th colspan="2">ข้อมูลส่วนตัว</th>
+          </tr>
+          <tr>
+            <td>ชื่อ</td>
+            <td>พชรพล กันทาลักษณ์</td>
+          </tr>
+          <tr>
+            <td>ชื่อเล่น</td>
+            <td>ณัฐ</td>
+          </tr>
+          <tr>
+            <td>อายุ</td>
+            <td>23 ปี</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- ─── Form ────────────────────────────────────── -->
+      <form>
+        <h3>ข้อมูลผู้ใช้</h3>
+        <label>ชื่อ:</label>
+        <input type="text" name="name" />
+        <br /><br />
+        <label>เพศ:</label>
+        <input type="radio" name="gender" value="male" /> ชาย
+        <input type="radio" name="gender" value="female" /> หญิง <br /><br />
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <br /><br />
+        <label>งานอดิเรก:</label>
+        <input type="checkbox" name="hobby" value="read" /> อ่านหนังสือ
+        <input type="checkbox" name="hobby" value="sport" /> กีฬา
+        <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>User</label>
+        <input type="text" name="user" />
+        <br />
+        <label>Password</label>
+        <input type="password" name="password" />
+        <br /><br />
+        <label>จังหวัด:</label>
+        <select name="province">
+          <option>เชียงใหม่</option>
+          <option>ลำปาง</option>
+          <option>น่าน</option>
+        </select>
+        <br /><br />
+        <button type="submit">บันทึกข้อมูล</button>
+      </form>
+    </main>
+
+    <!-- ──────────────────────────────────────────── Footer ──────────────────────────────────────────── -->
+    <footer id="contact">
+      <p>
+        พชรพล กันทาลักษณ์ 69543210019-3 Email: pacharapol@live.rmutl.ac.th
+      </p>
+
+      <a href="https://github.com/PacharaponKan" target="_blank">GitHub</a>
+    </footer>
+  </body>
+</html>

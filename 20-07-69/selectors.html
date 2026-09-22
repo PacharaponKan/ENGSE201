@@ -1,0 +1,184 @@
+<style>
+  /* ───────────────────────── Element Selectors ───────────────────────── */
+  p {
+    color: green;
+  }
+
+  /* ───────────────────────── Class Selectors ───────────────────────── */
+  .highlight {
+    background-color: yellow;
+    padding: 5px;
+  }
+
+  /* ───────────────────────── ID Selectors ───────────────────────── */
+  #header {
+    background: blue;
+    color: white;
+    padding: 10px;
+  }
+
+  /* ───────────────────────── Pseudo-class :hover ───────────────────────── */
+  p:hover {
+    color: red;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
+  /* ───────────────────────── Attribute Selector ───────────────────────── */
+  input[type="text"] {
+    border: 2px solid blue;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  input[type="text"]:focus {
+    border-color: rgb(255, 0, 128);
+    outline: none;
+    background-color: lightyellow;
+  }
+
+  /* ───────────────────────── Body Styles ───────────────────────── */
+  body {
+    font-family: serif;
+    font-style: normal;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-shadow: 5px 5px 5px gray;
+  }
+
+  p {
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+
+  /* ───────────────────────── Text Align ───────────────────────── */
+  .align-left {
+    text-align: left;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .align-justify {
+    text-align: justify;
+  }
+
+  /* ───────────────────────── Text Decoration ───────────────────────── */
+  .underline {
+    text-decoration: underline;
+  }
+
+  .line-through {
+    text-decoration: line-through;
+  }
+
+  .no-decoration {
+    text-decoration: none;
+  }
+
+  /* ───────────────────────── Line Height ───────────────────────── */
+  .line-height-normal {
+    line-height: 1.5;
+  }
+
+  .line-height-fixed {
+    line-height: 24px;
+  }
+</style>
+
+<body>
+  <h1>ตัวอย่าง CSS Selectors</h1>
+
+  <!-- Element Selector -->
+  <p>
+    ข้อความนี้ถูกจัดสีด้วย Element Selector
+    (p { color: green; })
+  </p>
+
+  <!-- Class Selector -->
+  <p class="highlight">
+    ข้อความนี้ถูกจัดสไตล์ด้วย Class Selector (.highlight)
+  </p>
+
+  <!-- ID Selector -->
+  <div id="header">
+    นี่คือพื้นที่ของ Header (ID Selector)
+  </div>
+
+  <!-- Pseudo-class -->
+  <h2>Pseudo-class :hover</h2>
+
+  <p>
+    นำเมาส์มาวางบนข้อความเพื่อดูเอฟเฟกต์
+  </p>
+
+  <!-- Attribute Selector -->
+  <h2>Attribute Selectors [type="text"]</h2>
+
+  <input
+    type="text"
+    placeholder="กรอกข้อความตรงนี้"
+  />
+
+  <!-- Text Properties -->
+  <h1>Text Properties</h1>
+
+  <!-- การจัดแนวข้อความ -->
+  <h2>1. การจัดแนวข้อความ (text-align)</h2>
+
+  <p class="align-left">
+    ข้อความนี้จัดชิดซ้าย
+  </p>
+
+  <p class="align-center">
+    ข้อความนี้จัดกึ่งกลาง
+  </p>
+
+  <p class="align-right">
+    ข้อความนี้จัดชิดขวา
+  </p>
+
+  <p class="align-justify">
+    ข้อความนี้ถูกจัดแบบเต็มบรรทัด เพื่อให้ข้อความทางด้านซ้าย
+    และด้านขวามีความเป็นระเบียบและมีระยะห่างที่เหมาะสม
+  </p>
+
+  <!-- การตกแต่งข้อความ -->
+  <h2>2. การตกแต่งข้อความ (text-decoration)</h2>
+
+  <p class="underline">
+    ข้อความนี้ขีดเส้นใต้
+  </p>
+
+  <p class="line-through">
+    ข้อความนี้มีเส้นขีดทับ
+  </p>
+
+  <p class="no-decoration">
+    ข้อความนี้ไม่มีการตกแต่ง
+  </p>
+
+  <!-- ระยะห่างบรรทัด -->
+  <h2>3. การกำหนดระยะบรรทัด (line-height)</h2>
+
+  <p class="line-height-normal">
+    ข้อความนี้กำหนดระยะห่างระหว่างบรรทัดเป็น 1.5 เท่าของขนาดตัวอักษร
+    ทำให้ข้อความอ่านง่ายและไม่อยู่ติดกันมากเกินไป
+  </p>
+
+  <p class="line-height-fixed">
+    ข้อความนี้กำหนดความสูงของแต่ละบรรทัดเป็น 24px
+    จึงทำให้ระยะห่างระหว่างบรรทัดมีขนาดคงที่
+  </p>
+</body>

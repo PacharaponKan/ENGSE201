@@ -1,0 +1,97 @@
+body {
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-weight: bold;
+  background-color: lightblue;
+  margin: 20px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px 5px gray;
+}
+
+p {
+  color: green;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+/* Class Selector */
+.highlight {
+  color: red;
+  background-color: yellow;
+  padding: 5px;
+}
+
+/* Pseudo-class :hover */
+p:hover {
+  color: red;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border-color: rgb(255, 0, 128);
+  outline: none;
+  background-color: lightyellow;
+}
+
+/* ID Selector */
+#main-header {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Text Align */
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+/* Text Decoration */
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+/* Line Height */
+.line-height-normal {
+  line-height: 1.5;
+}
+
+.line-height-fixed {
+  line-height: 24px;
+}
