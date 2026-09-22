@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Switch</title>
+</head>
+
+<body>
+
+    <h2>การตรวจสอบเกรด (Switch Statement)</h2>
+
+    <button onclick="checkGrade()">Run Code</button>
+
+    <div id="outputBox"></div>
+
+    <script>
+        function checkGrade() {
+
+            // สุ่มคะแนน 0 - 100
+            let score = Math.floor(Math.random() * 101);
+
+            let grade;
+            let result;
+            let description;
+
+            // ตัดเกรดด้วย if / else if / else
+            if (score >= 80) {
+                grade = "A";
+            } else if (score >= 70) {
+                grade = "B";
+            } else if (score >= 60) {
+                grade = "C";
+            } else if (score >= 50) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+
+            // ตรวจสอบ ผ่าน / ไม่ผ่าน
+            if (score >= 50) {
+                result = "ผ่าน";
+            } else {
+                result = "ไม่ผ่าน";
+            }
+
+            // คำอธิบายเกรดด้วย Switch Statement
+            switch (grade) {
+                case "A":
+                    description = "ยอดเยี่ยมมาก";
+                    break;
+
+                case "B":
+                    description = "ดีมาก รักษามาตรฐานไว้";
+                    break;
+
+                case "C":
+                    description = "ผ่านเกณฑ์ระดับดี";
+                    break;
+
+                case "D":
+                    description = "พอใช้ แต่ควรพัฒนาเพิ่ม";
+                    break;
+
+                case "F":
+                    description = "ต้องลงทะเบียนเรียนใหม่";
+                    break;
+            }
+
+            // แสดงผลบนหน้าเว็บ
+            document.getElementById("outputBox").innerHTML =
+                "คะแนนที่สุ่มได้: " + score + "<br>" +
+                "เกรด: " + grade + "<br>" +
+                "ผลสอบ: " + result + "<br>" +
+                "คำอธิบาย: " + description;
+
+            // แสดงผลใน Console
+            console.clear();
+            console.log("คะแนน:", score);
+            console.log("เกรด:", grade);
+            console.log("ผลสอบ:", result);
+            console.log("คำอธิบาย:", description);
+        }
+    </script>
+
+</body>
+</html>
